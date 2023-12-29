@@ -1,13 +1,15 @@
-// const url = 'https://167.71.33.221/categories/';
-
 const express = require('express');
 const https = require('https');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
 
 app.use(bodyParser.json());
+
+// Используйте cors middleware
+app.use(cors());
 
 app.post('/make-request', (req, res) => {
   // Получение данных из фронтенда
