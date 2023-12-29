@@ -17,7 +17,7 @@ app.post('/make-request', (req, res) => {
 
   // Опции для запроса к другому API
   const apiOptions = {
-    hostname: 'https://167.71.33.221/', // Замените на адрес вашего API
+    hostname: '167.71.33.221', // Замените на адрес вашего API
     path: requestData.endpoint, // Замените на путь вашего API
     method: 'GET',
     agent: new https.Agent({
